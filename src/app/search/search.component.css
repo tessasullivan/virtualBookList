@@ -12,7 +12,6 @@ img#books {
     margin-top: 20px;
 }
 
-
 .container {
     text-align: center;
   }
@@ -21,46 +20,23 @@ img#books {
     margin-top: 90px;
 }
 
-.grid {
-  display: grid;
-  grid-template-areas:
-  'image title . wantToRead  '
-  'image author author currentlyReading'
-  'image description description finishedReading';
-  grid-gap: 20px;
-  justify-content: center;
-}
-
 img#result_image {
   grid-area: image;
   height: 100px;
   width: 80px;
 }
+
 #title {
   font-weight: bold;
   font-size: 1.25em;
   grid-area: title;
 }
-#author {
-  grid-area: author;
-}
-#wantToRead {
-  grid-area: wantToRead;
-}
-#currentlyReading {
-  grid-area: currentlyReading;
-}
-#finishedReading {
-  grid-area: finishedReading;
-}
-#description {
-  grid-area: description;
-}
+
 .book {
-  /* border: solid 1px lightgray; */
   margin: 5px;
   margin-top: 20px;
 }
+
 #wantToRead button {
   color: white;
   background-color: FireBrick;
