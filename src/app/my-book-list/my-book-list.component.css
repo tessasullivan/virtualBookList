@@ -3,28 +3,104 @@ ul {
   list-style-type: none;
 }
 
+h2 {
+  text-align: center;
+  color: brown;
+}
+
 .container {
+  margin: 0px;
+  padding: 50px;
+  background-color: #f5f2df;
   text-align: center;
 }
 
+button#bwant {
+  color: #f5f2df;
+  background-color: FireBrick;
+  border-color: darkred;
+  margin: 7px;
+}
+
+button#current {
+  color: #f5f2df;
+  background-color: SeaGreen;
+  border-color: darkgreen;
+  margin: 6px;
+}
+
+button#finished {
+  color: #f5f2df;
+  background-color: SteelBlue;
+  border-color: darkblue;
+  margin: 6px;
+}
+
 button.remove {
+  color: white;
   background-color: gray;
   border-color: darkgray;
+  margin: 6px;
 }
 
 #want {
+  color: #f5f2df;
   background-color: FireBrick;
   border-color: darkred;
 }
 
+#wantTitle {
+  color: #f5f2df;
+  background-color: FireBrick;
+  border-color: darkred;
+  font-style: italic;
+}
+
+#wantTitle {
+  color: #f5f2df;
+  background-color: FireBrick;
+  border-color: darkred;
+  font-style: italic;
+}
+
 #finished {
+  color: #f5f2df;
   background-color: SteelBlue;
   border-color: darkblue;
 }
 
+#finishedTitle {
+  color: #f5f2df;
+  background-color: SteelBlue;
+  border-color: darkblue;
+  font-style: italic;
+}
+
+#finishedTitle {
+  color: #f5f2df;
+  background-color: SteelBlue;
+  border-color: darkblue;
+  font-style: italic;
+}
+
 #current {
+  color: #f5f2df;
   background-color: SeaGreen;
   border-color: darkgreen;
+}
+
+#currentTitle {
+  color: #f5f2df;
+  background-color: SeaGreen;
+  border-color: darkgreen;
+  font-style: italic;
+}
+
+#currentTitle {
+  color: #f5f2df;
+  background-color: SeaGreen;
+  border-color: darkgreen;
+  font-style: italic;
 }
 
 .card {
@@ -36,7 +112,7 @@ button.remove {
 }
 
 .card-body#finished-book {
-  background-color: MediumSlateBlue;
+  background-color: #f5f2df;
 }
 
 .card-body#want-shelf {
@@ -44,7 +120,7 @@ button.remove {
 }
 
 .card-body#want-book {
-  background-color: IndianRed;
+  background-color: #f5f2df;
 }
 
 .card-body#current-shelf {
@@ -52,10 +128,8 @@ button.remove {
 }
 
 .card-body#current-book {
-  background-color: MediumSpringGreen;
+  background-color: #f5f2df;
 }
-
-
 
 img {
   margin-bottom: 10px;

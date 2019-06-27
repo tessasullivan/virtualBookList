@@ -1,9 +1,7 @@
-
-
 <div class="container">
-  <h2>My Shelves</h2><br>
+  <h2>My Bookshelves...</h2><br>
+  <h6><a routerLink="/">Return to Book Search</a></h6>
   <div class="row">
-
     <div class="col-lg-4">
       <div class="card">
         <div class="card-header" id="want"><h3>Want To Read</h3></div>
@@ -11,16 +9,17 @@
           <ul>
             <li *ngFor="let book of myBooks | async | shelf:filterByWantToRead">
               <div class="card">
-                <div class="card-header" id="want"><h3>{{book.title}}</h3></div>
+                <div class="card-header" id="wantTitle"><h5>{{book.title}}</h5></div>
                 <div class="card-body" id="want-book">
                   <h6>by {{book.authors}}</h6>
                   <h6>{{book.pageCount}} pages</h6>
                   <img (click)="goToDetailPage(book)" src = {{book.image}} width=200px length=200px><br>
-                  <button id="current" (click)="moveBook(book, 'currentlyReading')">Move To My 'Currently Reading' Shelf</button>
-                  <button id="finished" (click)="moveBook(book, 'finishedReading')">Move To My 'Books I've Read' Shelf</button>
+                  <button id="current" (click)="moveBook(book, 'currentlyReading')">Move To 'Currently Reading'</button>
+                  <br>
+                  <button id="finished" (click)="moveBook(book, 'finishedReading')">Move to 'Books I've Read' </button><br>
                   <button class="remove" (click)="removeBook(book)">Remove From My Shelves</button>
                 </div>
-              </div><br>
+              </div>
             </li>
           </ul>
         </div>
@@ -34,16 +33,16 @@
           <ul>
             <li *ngFor="let book of myBooks | async | shelf:filterByReading">
               <div class="card">
-                <div class="card-header" id="current"><h3>{{book.title}}</h3></div>
+                <div class="card-header" id="currentTitle"><h5>{{book.title}}</h5></div>
                 <div class="card-body" id="current-book">
                   <h6>by {{book.authors}}</h6>
                   <h6>{{book.pageCount}} pages</h6>
                   <img (click)="goToDetailPage(book)" src = {{book.image}} width=200px length=200px><br>
-                  <button id="want" (click)="moveBook(book, 'wantToRead')">Move To My 'Want To Read' Shelf</button>
-                  <button id="finished" (click)="moveBook(book, 'finishedReading')">Move To My 'Books I've Read' Shelf</button>
+                  <button id="bwant" (click)="moveBook(book, 'wantToRead')">Move To 'Want To Read'</button>
+                  <button id="finished" (click)="moveBook(book, 'finishedReading')">Move to 'Books I've Read'</button>
                   <button class="remove" (click)="removeBook(book)">Remove From My Shelves</button>
                 </div>
-              </div><br>
+              </div>
             </li>
           </ul>
         </div>
@@ -57,13 +56,13 @@
           <ul>
             <li *ngFor="let book of myBooks | async | shelf:filterByFinished">
               <div class="card">
-                <div class="card-header" id="finished"><h3>{{book.title}}</h3></div>
+                <div class="card-header" id="finishedTitle"><h5>{{book.title}}</h5></div>
                 <div class="card-body" id="finished-book">
                   <h6>by {{book.authors}}</h6>
                   <h6>{{book.pageCount}} pages</h6>
                   <img (click)="goToDetailPage(book)" src = {{book.image}} width=200px length=200px>
-                  <button id="want" (click)="moveBook(book, 'wantToRead')">Move To My 'Want To Read' Shelf</button>
-                  <button id="current" (click)="moveBook(book, 'currentlyReading')">Move To My 'Currently Reading' Shelf</button>
+                  <button id="want" (click)="moveBook(book, 'wantToRead')">Move to 'Want To Read' </button> <br>
+                  <button id="current" (click)="moveBook(book, 'currentlyReading')">Move to 'Currently Reading'</button>
                   <button class="remove" (click)="removeBook(book)">Remove From My Shelves</button>
                 </div>
               </div><br>
@@ -74,5 +73,6 @@
     </div>
 
   </div>
-  <h5><a routerLink="/home">Return to Book Search</a></h5>
+  <h6><a routerLink="/">Return to Book Search</a></h6>
+  <h6><a routerLink="/search">Return to Book Search</a></h6>1
 </div>
