@@ -17,9 +17,11 @@ You will need the following things properly installed on your computer.
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
 * [Angular.js]
+* [Firebase]
 
 ## Installation
 
+* Contact us via Github for API and Firebase code
 * `git clone <repository-url>` this repository
 * `npm install`
 * `ng serve`

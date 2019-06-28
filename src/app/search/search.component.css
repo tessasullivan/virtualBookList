@@ -20,11 +20,21 @@ img#books {
     margin-top: 90px;
 }
 
-img#result_image {
-  grid-area: image;
-  height: 100px;
-  width: 80px;
+
+/* img#result_image {
+.grid {
+  display: grid;
+  grid-template-areas:
+  'image title title wantToRead  '
+  'image author author currentlyReading'
+  'image description description finishedReading';
+  grid-gap: 5px;
+  justify-content: center;
 }
+
+#image {
+  grid-area: image;
+} */
 
 #title {
   font-weight: bold;
@@ -34,7 +44,7 @@ img#result_image {
 
 .book {
   margin: 5px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 #wantToRead button {
